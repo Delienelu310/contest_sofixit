@@ -3,9 +3,10 @@ package com.contest;
 public class App {
 
     /**
+     * the function that "counts material"
      * 
      * @param spaceship array of positive numbers, as "spaceship" physically cannot have negative
-     * @return
+     * @return the material
      */
     public static int material(int[] spaceship){
         //0. handle special cases (empty array, array with negative numbers etc) 
