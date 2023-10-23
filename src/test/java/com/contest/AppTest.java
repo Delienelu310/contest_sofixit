@@ -39,4 +39,29 @@ public class AppTest
         int[] input = new int[]{6, 2, 1, 1, 8, 0, 5, 5, 0, 1, 8, 9, 6, 9, 4, 8, 0, 0};
         assertEquals(expected, material(input), "The second site test is ok");
     }
+
+    @Test void test1(){
+        int expected = 0;
+        int[] input = new int[]{1,1,1};
+        assertEquals(expected, material(input),"Testing {1,1,1}");
+    }
+
+    @Test void test2(){
+        int expected = 0;
+        int[] input = new int[]{1,1,10};       
+        assertEquals(expected, material(input),"Testing {1,1,10}");
+    }
+
+    @Test void test3(){
+        int expected = 0;
+        int[] input = new int[]{1,10,1};
+        assertEquals(expected, material(input),"Testing {1,10,1}");    
+    }
+
+    @Test void test4(){
+        int expected = 12;
+        int[] input = new int[]{10,5,3,11};
+        assertEquals(expected, material(input),"Testing {10,5,3,11}");
+    }
+
 }
